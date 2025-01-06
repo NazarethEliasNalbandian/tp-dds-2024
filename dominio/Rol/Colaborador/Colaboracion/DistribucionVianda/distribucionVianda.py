@@ -29,3 +29,6 @@ class DistribucionVianda(Colaboracion):
                 f"Heladera Destino: {self.heladera_destino}\n"
                 f"Motivo: {self.motivo}\n"
                 f"Fecha: {self.fecha}")
+    
+    def ejecutar(self):
+        return self.detalle()

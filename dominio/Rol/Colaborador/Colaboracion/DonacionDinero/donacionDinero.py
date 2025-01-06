@@ -13,3 +13,6 @@ class DonacionDinero(Colaboracion):
         if not self.disponible:
             return "Este colaborador no puede realizar esta tarea."
         return f"Donación de dinero: ${self.monto:.2f}"
+    
+    def ejecutar(self):
+        return self.detalle()

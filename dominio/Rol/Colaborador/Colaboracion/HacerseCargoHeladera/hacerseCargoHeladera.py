@@ -11,3 +11,6 @@ class HacerCargoHeladera(Colaboracion):
         if not self.disponible:
             return "Este colaborador no puede realizar esta tarea."
         return f"Uso de heladera por {self.tiempo} días"
+    
+    def ejecutar(self):
+        return self.detalle()

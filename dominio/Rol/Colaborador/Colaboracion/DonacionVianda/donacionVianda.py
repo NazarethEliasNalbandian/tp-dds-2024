@@ -20,3 +20,6 @@ class DonacionVianda(Colaboracion):
         if not self.disponible:
             return "Este colaborador no puede realizar esta tarea."
         return f"Donación de Vianda: {self.vianda}, Fecha: {self.fecha_donacion}, Colaborador: {self.colaborador.descripcion()}"
+    
+    def ejecutar(self):
+        return self.detalle()

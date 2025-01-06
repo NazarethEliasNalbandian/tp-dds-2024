@@ -13,3 +13,7 @@ class Colaboracion(ABC):
     @abstractmethod
     def detalle(self):
         pass
+    
+    @abstractmethod
+    def ejecutar(self):
+        pass
