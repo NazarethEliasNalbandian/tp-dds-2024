@@ -21,14 +21,14 @@ class DistribucionVianda(Colaboracion):
         self.motivo = motivo
         self.fecha = fecha
 
+    @Colaboracion.verificar_disponibilidad
     def detalle(self):
-        if not self.disponible:
-            return "Este colaborador no puede realizar esta tarea."
         return (f"Distribución de viandas: {self.cantidad_viandas} unidades\n"
                 f"Heladera Origen: {self.heladera_origen}\n"
                 f"Heladera Destino: {self.heladera_destino}\n"
                 f"Motivo: {self.motivo}\n"
                 f"Fecha: {self.fecha}")
     
+    @Colaboracion.verificar_disponibilidad
     def ejecutar(self):
         return self.detalle()

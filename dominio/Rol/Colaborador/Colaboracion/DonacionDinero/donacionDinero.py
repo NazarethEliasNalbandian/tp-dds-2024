@@ -9,10 +9,10 @@ class DonacionDinero(Colaboracion):
         self.fechaDonacion = fechaDonacion
         self.frecuencia = frecuencia
 
+    @Colaboracion.verificar_disponibilidad
     def detalle(self):
-        if not self.disponible:
-            return "Este colaborador no puede realizar esta tarea."
         return f"Donación de dinero: ${self.monto:.2f}"
     
+    @Colaboracion.verificar_disponibilidad
     def ejecutar(self):
         return self.detalle()

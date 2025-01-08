@@ -21,8 +21,7 @@ class Heladera:
         self.viandas = []
 
     def agregar_vianda(self, vianda):
-        from dominio.Vianda.vianda import Vianda
-        
+        from dominio.Heladera.Vianda.vianda import Vianda
         if not isinstance(vianda, Vianda):
             raise ValueError("La vianda debe ser una instancia de la clase Vianda.")
         if len(self.viandas) >= self.capacidad:

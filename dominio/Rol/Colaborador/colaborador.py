@@ -2,7 +2,6 @@ from typing import List
 from dominio.Rol.Colaborador.Colaboracion.colaboracion import Colaboracion
 from dominio.Rol.rol import Rol
 
-
 class Colaborador(Rol):
     def __init__(self):
         self.colaboraciones: List[Colaboracion] = []
@@ -24,7 +23,10 @@ class Colaborador(Rol):
                 raise ValueError("La colaboración especificada no se encuentra en la lista.")
         else:
             raise ValueError("Debe proporcionar un índice o una instancia de Colaboracion para eliminar.")
-        
+    
+    def descripcion(self):
+        return f"Colaborador con {len(self.colaboraciones)} colaboraciones"
+    
     def actuar(self):
         resultados = []
         for colaboracion in self.colaboraciones:

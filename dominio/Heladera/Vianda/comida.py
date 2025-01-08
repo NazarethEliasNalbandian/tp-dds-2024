@@ -5,8 +5,6 @@ class Comida:
         # Validaciones básicas para los atributos
         if not isinstance(nombre, str) or not nombre.strip():
             raise ValueError("El nombre debe ser una cadena no vacía.")
-        if not isinstance(calorias, (int, float)) or calorias < 0:
-            raise ValueError("Las calorías deben ser un número positivo.")
         if not isinstance(fechaCaducidad, str):
             raise ValueError("La fecha de caducidad debe ser una cadena en formato 'YYYY-MM-DD'.")
         

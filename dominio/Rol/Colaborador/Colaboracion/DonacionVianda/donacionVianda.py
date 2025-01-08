@@ -1,7 +1,7 @@
 from datetime import datetime
+from dominio.Heladera.Vianda.vianda import Vianda
 from dominio.Rol.Colaborador.Colaboracion.colaboracion import Colaboracion
 from dominio.Rol.Colaborador.colaborador import Colaborador
-from dominio.Vianda.vianda import Vianda
     
 class DonacionVianda(Colaboracion):
     def __init__(self, vianda, fecha_donacion, colaborador, disponible=True):
@@ -16,10 +16,10 @@ class DonacionVianda(Colaboracion):
         self.fecha_donacion = fecha_donacion
         self.colaborador = colaborador
 
+    @Colaboracion.verificar_disponibilidad
     def detalle(self):
-        if not self.disponible:
-            return "Este colaborador no puede realizar esta tarea."
         return f"Donación de Vianda: {self.vianda}, Fecha: {self.fecha_donacion}, Colaborador: {self.colaborador.descripcion()}"
     
+    @Colaboracion.verificar_disponibilidad
     def ejecutar(self):
         return self.detalle()

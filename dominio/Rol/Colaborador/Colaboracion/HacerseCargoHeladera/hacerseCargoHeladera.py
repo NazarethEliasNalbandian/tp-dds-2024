@@ -7,10 +7,10 @@ class HacerCargoHeladera(Colaboracion):
             raise ValueError("El tiempo debe ser un número entero positivo representando días.")
         self.tiempo = tiempo
 
+    @Colaboracion.verificar_disponibilidad
     def detalle(self):
-        if not self.disponible:
-            return "Este colaborador no puede realizar esta tarea."
         return f"Uso de heladera por {self.tiempo} días"
     
+    @Colaboracion.verificar_disponibilidad
     def ejecutar(self):
         return self.detalle()
