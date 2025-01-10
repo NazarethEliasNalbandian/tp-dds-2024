@@ -1,5 +1,5 @@
-from dominio.Heladera.Vianda.comida import Comida
-from dominio.Heladera.heladera import Heladera
+from dominio.Heladeraa.Vianda.comida import Comida
+from dominio.Heladeraa.heladera import Heladera
 
 class Vianda:
     def __init__(self, comida, heladera, peso=None, entregada=False):

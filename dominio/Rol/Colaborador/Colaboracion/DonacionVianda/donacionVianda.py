@@ -1,5 +1,5 @@
 from datetime import datetime
-from dominio.Heladera.Vianda.vianda import Vianda
+from dominio.Heladeraa.Vianda.vianda import Vianda
 from dominio.Rol.Colaborador.Colaboracion.colaboracion import Colaboracion
 from dominio.Rol.Colaborador.colaborador import Colaborador
     

@@ -1,4 +1,4 @@
-from dominio.Heladera.heladera import Heladera
+from dominio.Heladeraa.heladera import Heladera
 from dominio.Rol.Colaborador.Colaboracion.colaboracion import Colaboracion
 
 class DistribucionVianda(Colaboracion):
