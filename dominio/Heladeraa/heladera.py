@@ -1,12 +1,12 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import List
+from dominio.Espacio.ubicacion import Ubicacion
 from dominio.Heladeraa.Sensores.sensorMovimiento import SensorMovimiento
 from dominio.Heladeraa.Sensores.sensorTemperatura import SensorTemperatura
 from dominio.Heladeraa.Temperatura.temperatura import Temperatura
 from dominio.Heladeraa.Vianda.vianda import Vianda
 from dominio.Heladeraa.estadoHeladera import EstadoHeladera
-from dominio.Ubicacion.ubicacion import Ubicacion
 
 @dataclass
 class Heladera:
@@ -28,6 +28,12 @@ class Heladera:
             raise ValueError("La fecha de funcionamiento debe estar en formato 'YYYY-MM-DD'.")
 
         self.agregarEstado(activo=True)
+    def mesesActiva(self) -> int:
+        """Calcula el total de meses completos que la heladera ha estado activa desde su fecha de funcionamiento."""
+        if not self.estaActiva():
+            return 0
+        fecha_actual = datetime.now()
+        return (fecha_actual.year - self.fechaFuncionamiento.year) * 12 + fecha_actual.month - self.fechaFuncionamiento.month
 
     def agregar_vianda(self, vianda: 'Vianda'):
         """Agrega una vianda a la heladera si hay capacidad."""
