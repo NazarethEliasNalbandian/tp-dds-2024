@@ -5,8 +5,8 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 
+from dominio.Espacio.ubicacion import Ubicacion
 from dominio.Heladeraa.heladera import Heladera
-from dominio.Ubicacion.ubicacion import Ubicacion
 
 ubicacion1 = Ubicacion(-34.603722, -58.381592, "Av. Corrientes 123", "Oficina principal")
 ubicacion2 = Ubicacion(-34.6083, -58.3712, "Plaza de Mayo", "Centro histórico")

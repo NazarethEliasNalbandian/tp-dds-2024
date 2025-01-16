@@ -1,4 +1,4 @@
-from dominio.Persona.PersonaHumana.dni import DNI
+from dominio.Persona.PersonaHumana.Documento.documento import Documento
 from dominio.Rol.Vulnerable.Tarjeta.tarjeta import Tarjeta
 from dominio.Rol.rol import Rol
 
@@ -9,7 +9,7 @@ class Vulnerable(Rol):
     fecha_nacimiento: str
     fecha_registro: str
     posee_domicilio: bool
-    dni: DNI
+    documento: Documento
     cantidad_hijos: int = 0
     tarjeta: Tarjeta = field(default=None)
 

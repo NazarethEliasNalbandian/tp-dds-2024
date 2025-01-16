@@ -1,0 +1,16 @@
+TipoDocumento,NroDocumento,Nombre,Apellido,Mail,FechaColaboracion,FormaColaboracion,Cantidad
+DNI,12345678,Juan,Perez,juan.perez@example.com,01/04/2023,ENTREGA_TARJETAS,8354
+LE,45678901,Luis,Gomez,luis.gomez@example.com,18/08/2023,DONACION_VIANDAS,36
+LE,45678901,Luis,Gomez,luis.gomez@example.com,28/07/2023,REDISTRIBUCION_VIANDAS,15
+DNI,98765432,Laura,Martinez,laura.martinez@example.com,10/09/2023,ENTREGA_TARJETAS,65
+DNI,12345678,Juan,Perez,juan.perez@example.com,07/04/2023,DINERO,9
+LC,87654321,Ana,Lopez,ana.lopez@example.com,26/06/2023,DINERO,140
+DNI,98765432,Laura,Martinez,laura.martinez@example.com,26/06/2023,REDISTRIBUCION_VIANDAS,172
+DNI,98765432,Laura,Martinez,laura.martinez@example.com,12/07/2023,ENTREGA_TARJETAS,171
+LC,87654321,Ana,Lopez,ana.lopez@example.com,26/12/2023,REDISTRIBUCION_VIANDAS,6225
+DNI,12345678,Juan,Perez,juan.perez@example.com,09/08/2023,ENTREGA_TARJETAS,3086
+DNI,98765432,Laura,Martinez,laura.martinez@example.com,02/03/2023,DONACION_VIANDAS,183
+LE,45678901,Luis,Gomez,luis.gomez@example.com,16/08/2023,REDISTRIBUCION_VIANDAS,47
+DNI,98765432,Laura,Martinez,laura.martinez@example.com,20/04/2023,REDISTRIBUCION_VIANDAS,9259
+DNI,12345678,Juan,Perez,juan.perez@example.com,01/01/2023,DINERO,4260
+DNI,12345678,Juan,Perez,juan.perez@example.com,21/04/2023,REDISTRIBUCION_VIANDAS,92
